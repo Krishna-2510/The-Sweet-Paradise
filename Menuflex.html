@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+    <style>
+        body {
+            color:rgb(255, 255, 255);
+            background: url("cookie.jpg");
+            background-repeat: no-repeat;
+            background-size: 1277px;
+            background-color: black;
+        }
+        h1{
+            color: rgb(0, 0, 0);
+            text-align: center;
+            display: block;
+            margin:auto 300px;
+            font-family: 'Pattaya', sans-serif;
+            border:2px solid rgb(255, 255, 255);
+            border-radius: 10px;
+        }
+        .home{
+            position:absolute;
+            top:10px;
+            right:30px;
+        }
+        .home a{
+            color:white;
+            padding:4px 30px;
+            border:2px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            background-color: rgb(175, 172, 172);
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .home a:hover{
+            background-color: rgb(75, 75, 75);
+        }
+        .logo{
+            display: inline-block;
+            /* border: 2px solid red;  */
+            position: absolute;
+            left: 60px;
+            top: 6px;
+        }
+    .logo img{
+        border:2px solid rgb(0, 0, 0);
+        margin-top:-18px;
+    }
+        .logotitle{
+            position: absolute;
+            text-align: center;
+            font-family: 'Pattaya', sans-serif;
+            color: black;
+            border: 2px solid black;
+            background-color: white;
+            width:100px;
+            top: 84px;
+            left: 58px;
+        }
+        .menuhead{
+            font-family:'Pattaya', sans-serif; 
+            border:2px solid white;
+            border-radius: 10px;
+            text-align:center;
+            letter-spacing:5px;
+            height: 30px;
+            padding: 10px 10px;
+            color:black;
+            position: absolute;
+            top: 583px;
+            width: 96vw;
+            }
+        .images{
+            border:2px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            margin:37px 18px ;
+            width:200px;
+            height:200px;
+            display: block;
+        }
+        .mid {
+            display: block;
+            width: 700px;
+            margin: 29px auto;
+            /* border: 2px solid green;  */
+        }
+        .items li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .items li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+
+        }
+
+        .items li a:hover,.items li a.active {
+            text-decoration: underline;
+            color: rgb(0, 0, 0);
+        }
+        #headimg{
+            width: 630px;
+            height: 348px;
+            margin-top: 50px;
+            border: 4px solid rgb(255, 255, 255);
+            border-radius: 70px;
+            margin-left: 46px;
+        }
+        .container{
+            border: 2px solid rgb(253, 253, 253);
+            display: flex;
+            flex-wrap: wrap;
+            width: 1212px;
+            margin-top: 129px;
+            padding: 4px 4px;
+            border-radius: 25px;
+            background-color: black;
+            background-image: url('woodback.jpg');
+        }
+        .items{
+            flex-basis: 30px;
+        }
+        .tags{
+            font-family:'Pattaya', sans-serif; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="super">
+        <h1>The Sweet Paradise</h1>
+        <div class="mid">
+            <ul class="items">
+                <li><a href="restaurant.html">Home</a></li>
+                <li><a href="About.html" target="_blank">About Us</a></li>
+                <li><a href="#" class="active">Menu</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <p class="logo">
+            <img src="logo.png" alt="" height="70px" width="100px">
+             <div class= "logotitle">SWEET PARADISE</div>
+        </p>
+        <img src="menuimage.jpg" alt="" id="headimg">
+        <h2 class="menuhead">MENU</h2>
+        <div class="container">
+            <div class="items">
+                <img class = "images" src = "cake.jpg">
+                    <div class="tags">
+                        <span>CAKES</span>
+                        <p>Chocolate(250rs)</p>
+                        <p>Vanilla(250rs)</p>
+                        <p>Strawberry(300rs)</p>
+                        <p>Black Forest(500rs)</p>
+                    </div>
+            </div>
+            <div class="items">
+                <img class="images" src = "choco.jpg">
+                <div class="tags">
+                    <span>COOKIES</span>
+                    <p>Choco Chip Chocolate(20pcs-250rs)</p>
+                    <p>Butter(10-100rs)</p>
+                    <p>Naan Khatai(5-200rs)</p>
+                    <p>Cream Cookies(10-30rs)</p>
+                    <p>Coffee Cookies(10-100rs)</p>
+                </div>
+            </div>
+            <div class="items">
+                <img class ="images" src="bread.jpg">
+                <div class="tags">
+                    <span>BREADS</span>
+                    <p>Chocolatine(25rs/piece)</p>
+                    <p>Croissants(30rs/piece)</p>
+                    <p>Baguettes(45rs/piece)</p>
+                    <p>Special Fruit Bread(50rs/piece)</p>
+                </div>
+            </div>
+            <div class="items">
+                <img class ="images" src="pie.jpg">
+                <div class="tags">
+                    <span>PIES</span>
+                    <p>Apple Pie(250rs)</p>
+                    <p>Rasberry pie(250rs)</p>
+                    <p>Choco Pie(250rs)</p>
+                    <p>Mixed Fruit Pie(250rs)</p>
+                </div>
+            </div>
+            <div class="items">
+                <img class ="images" src="mac.jpg">
+                <div class="tags">
+                    <span>MACARONS</span>
+                    <p>Chocolate(25rs)</p>
+                    <p>Pistachio(100rs)</p>
+                    <p>Green Tea(75rs)</p>
+                    <p>Rasberry(50rs)</p>
+                </div>
+            </div>
+            <div class="items">
+                <img class="images" src = "churros.jpg">
+                <div class="tags">
+                    <span>CHURROS<span>
+                    <p>Chocolate(250rs)</p>
+                    <p>Eclairs(250rs)</p>
+                    <p>Cupcakes(250rs)</p>
+                    <p>Truffles(300rs)</p>
+                    <p>Baked(100rs)</p>
+                </div>
+            </div>
+            <div class="items">
+                <img class="images" src = "chocobar.jpg">
+                <div class="tags">
+                    <span>CHOCOLATE BARS</span>
+                    <p>White Chocolate(250rs)</p>
+                    <p>Dark Chocolate(250rs)</p>
+                    <p>Semisweet Chocolate(250rs)</p>
+                    <p>Vegan Chocolate(250rs)</p>
+                    <p>Milk Chocolate(250rs)</p>
+                </div>
+            </div>
+            <div class="items">
+                <img class="images" src = "pancakes.jpg">
+                <div class="tags">
+                    <span>PANCAKES</span>
+                    <p>American Style(250rs)</p>
+                    <p>Scotch style(250rs)</p>
+                    <p>Russian style(250rs)</p>
+                </div>
+            </div>
+            <div class="items">
+                <img class="images" src = "candy.jpg">
+                <div class="tags">
+                    <span>CANDIES</span>
+                    <p>Chocolate(250rs)</p>
+                    <p>Caramels(250rs)</p>
+                    <p>Gummies(250rs)</p>
+                    <p>Licorice(250rs)</p>
+                    <p>Chewing gums(250rs)</p>
+                </div>
+            </div>
+            <div class="items">
+                <img class="images" src = "cupcake.jpg">
+                <div class="tags">
+                    <span>CUPCAKES</span>
+                    <p>Chocolate(250rs)</p>
+                    <p>Vanilla(250rs)</p>
+                    <p>Strawberry(250rs)</p>
+                    <p>ChocoChip(250rs)</p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
